@@ -1,0 +1,91 @@
+openapi: 3.0.0
+info:
+  title: VM API REST
+  version: '1.0'
+  description: 'Provides OSes for running a vm service, if you want to build a vm.'
+  license:
+    name: MIT
+servers:
+  - url: 'http://localhost:3000'
+    description: VMREST
+paths:
+  /vms/mac:
+    get:
+      summary: vmgetmac
+      tags: []
+      responses: {}
+      operationId: get-vms-mac
+    post:
+      summary: vmcreatemac
+      tags: []
+      responses: {}
+      operationId: post-vms-mac
+    put:
+      summary: vmpartiallychangemac
+      tags: []
+      responses: {}
+      operationId: put-vms-mac
+    patch:
+      summary: vmpartiallychangemac
+      tags: []
+      responses: {}
+      operationId: patch-vms-mac
+    delete:
+      summary: vmremovemac
+      tags: []
+      responses: {}
+      operationId: delete-vms-mac
+  /vms/ubuntu:
+    get:
+      summary: vmgetubuntu
+      tags: []
+      responses: {}
+      operationId: get-vms-ubuntu
+    post:
+      summary: vmcreateubuntu
+      tags: []
+      responses: {}
+      operationId: post-vms-ubuntu
+    put:
+      summary: vmpartiallychangeubuntu
+      tags: []
+      responses: {}
+      operationId: put-vms-ubuntu
+    patch:
+      summary: vmpartiallychangeubuntu
+      tags: []
+      responses: {}
+      operationId: patch-vms-ubuntu
+    delete:
+      summary: vmremoveubuntu
+      tags: []
+      responses: {}
+      operationId: delete-vms-ubuntu
+  /vms/windows:
+    get:
+      summary: vmgetwindows
+      tags: []
+      responses: {}
+      operationId: get-vms-windows
+    post:
+      summary: vmcreatewindows
+      tags: []
+      responses: {}
+      operationId: post-vms-windows
+    put:
+      summary: vmpartiallychangewindows
+      tags: []
+      responses: {}
+      operationId: put-vms-windows
+    patch:
+      summary: vmpartiallychangewindows
+      tags: []
+      responses: {}
+      operationId: patch-vms-windows
+    delete:
+      summary: vmdeletewindows
+      tags: []
+      responses: {}
+      operationId: delete-vms-windows
+components:
+  schemas: {}
